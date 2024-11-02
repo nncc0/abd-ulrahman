@@ -1,0 +1,46 @@
+/* إعدادات الأنميشن الأساسية */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* استخدام الأنميشن في العناصر */
+.scroll-visible[data-scroll="fade-up"] {
+    animation: fadeInUp 1s ease forwards;
+}
+
+.scroll-visible[data-scroll="fade-right"] {
+    animation: fadeInRight 1s ease forwards;
+}
+
+.scroll-visible[data-scroll="fade-left"] {
+    animation: fadeInLeft 1s ease forwards;
+}
